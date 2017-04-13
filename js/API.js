@@ -1,4 +1,5 @@
 import {get} from "jquery";
+import ServerActions from "./actions/ServerActions";
 
 let API = {
   fetchLinks() {
@@ -6,7 +7,7 @@ let API = {
 
     // Ajax request to read /data/links
     get("/data/links").done(resp => {
-      console.log(resp);
+      ServerActions.receiveLinks(resp);
     });
   }
 };
