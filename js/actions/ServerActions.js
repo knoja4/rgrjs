@@ -5,7 +5,7 @@ let ServerActions = {
   receiveLinks(links) {
     console.log("2. In ServerActions");
     AppDispatcher.dispatch({
-      actionType: ServerActions.RECEIVE_LINKS,
+      actionType: ActionTypes.RECEIVE_LINKS,
       links
     });
   }
